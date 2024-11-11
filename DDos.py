@@ -81,7 +81,7 @@ def usage():
 	usage : python3 admed[-s] [-p] [-t]
 	-h : help
 	-s : server ip
-	-p : port default 30141
+	-p : port default 80
 	-t : turbo default 300 \033[0m''')
 	sys.exit()
 
@@ -106,7 +106,7 @@ def get_parameters():
 	else:
 		usage()
 	if opts.port is None:
-		port = 30141
+		port = 80
 	else:
 		port = opts.port
 	if opts.turbo is None:
